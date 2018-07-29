@@ -1,9 +1,9 @@
-# Postgres
+# Postgres Extended
 Sweet API wrapper for Postgres on top of `pg-pool`. 
 
 # Usage
 ```Javascript
-import Postgres from '@richytong/postgres';
+import Postgres from 'postgres-extended';
 
 const { database, close } = Postgres({
   host: YOUR_HOST,
