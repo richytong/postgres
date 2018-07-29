@@ -1,0 +1,8 @@
+# lint config
+.eslintrc.js
+
+# babel config
+.babelrc
+
+# src files
+src

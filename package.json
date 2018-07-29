@@ -1,0 +1,38 @@
+{
+  "name": "postgres",
+  "version": "0.1.0",
+  "description": "Sweet API wrapper for Postgres on top of `pg-pool`",
+  "author": "Richard Tong",
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build-source": "npm run clean && babel ./src --out-dir ./dist",
+    "test": "mocha --compilers js:babel-core/register ./test/**/*.js",
+    "lint": "eslint --ext .js ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:richytong/postgres"
+  },
+  "dependencies": {
+    "pg": "^7.4.3",
+    "pg-pool": "^2.0.3",
+    "to-snake-case": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^2.0.7",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "mocha": "^5.2.0",
+    "sinon": "^6.1.4"
+  }
+}
