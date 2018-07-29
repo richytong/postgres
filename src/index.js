@@ -1,7 +1,7 @@
 import Pool from 'pg-pool';
 import toSnakeCase from 'to-snake-case';
 
-export default (configObject) => {
+const Postgres = (configObject) => {
   const pool = new Pool(configObject);
   const close = pool.end.bind(pool);
   const ready = Promise.resolve();
@@ -73,3 +73,6 @@ export default (configObject) => {
   };
   return { close, ready, database };
 };
+
+module.exports = Postgres;
+export default Postgres;

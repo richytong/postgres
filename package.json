@@ -1,5 +1,5 @@
 {
-  "name": "postgres",
+  "name": "postgres-extended",
   "version": "0.1.0",
   "description": "Sweet API wrapper for Postgres on top of `pg-pool`",
   "author": "Richard Tong",
